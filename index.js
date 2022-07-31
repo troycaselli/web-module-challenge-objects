@@ -227,13 +227,20 @@ Use the carMaker function below to do the following:
   Then we called car1.drive(100)
   It would return 110 because it was created with 10 as the odometer and we added 100 to it with the drive method 
 */
+const cars = [
+  {model: 'sonata', odometer: 130000},
+  {model: 'elantra', odometer: 170000},
+  {model: 'century', odometer: 90000},
+  {model: 'ferrari', odometer: 15000},
+]
 
-
-function carMaker(/* code here */) {
-    /* code here */
-    
+function carMaker(car, odometer) {
+  return car.odometer = car.odometer + odometer;
 }
 
+console.log(carMaker(cars[3], 300));
+
+console.log(cars);
 
 /* 🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑 */
 function foo(){
